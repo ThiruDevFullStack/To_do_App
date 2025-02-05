@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Times New Roman", Times, serif;
+    background-image: linear-gradient(to right top, #303705, #515f0a, #758b0d, #99ba0f, #beeb12);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+   
+}
+li{
+    list-style: circle;
+}
+a{
+    text-decoration: none;
+}
+
+/* text h1 */
+#root{
+    width: 90%;
+    max-width: 1600px;
+    /* border: 2px solid blue; */
+    margin: 0 auto;
+    margin-top: 0px;
+}
+#h1El{
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(72, 14, 130);
+    font-weight: bolder;
+}
+
+/* input css */
+.InputFiled {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    /* border: 2px solid green; */
+}
+input{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 2px solid #0a8e32;
+    background-color: #b9f860;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#btn{
+    background-color: white; /* Green */
+    border: 2px solid green;
+    color:rgb(12, 133, 56); /* Green */
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: "Arial", sans-serif;
+    transition: background-color 0.3s, transform 0.3s;
+}
+#btn:hover{
+    background-color: rgb(12, 133, 56); /* Green */
+    border: 2px solid white;
+    color: white;
+}
+
+
+/* full datas list */
+.fullData{
+    width: 100%;
+    /* border: 2px solid yellowgreen; */
+    display: flex;
+    margin: 30px auto;
+    /* justify-content: space-around; */
+}
+
+.StoredItems,.CompletedItems{
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px); /* The actual blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for visual effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    /* box-shadow: -2px 0px 9px 5px rgb(179, 231, 21); */
+    border-radius: 10px;
+    /* background-color: #9cd10b; */
+    padding-left: 5px;
+    margin: 0 5px;
+    width: 50%;
+    /* border: 1px solid rgb(25, 112, 6); */
+    border: none;
+}
+.StoredItems h2,.CompletedItems h2{
+    padding: 16px;
+    text-align: center;
+    color: #380707;
+}
+li{
+    max-width: 72%;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+    border-bottom: 2px solid green;
+    color: rgb(248, 246, 243);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+.StoredItems button,.CompletedItems button{
+  
+    background-color: #139f18; /* Green */
+    border: 1px solid white;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 14px;
+    margin: 5px 3px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: "Arial", sans-serif;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.StoredItems button:hover,.CompletedItems button:hover{
+    background-color:white;
+    border: 1px solid #139f18;
+    color: #139f18;
+}
+#storedButtonsList{
+    position: relative;
+    left: 485px;
+    bottom: 40px;
+}
+#completeButton{
+    position: relative;
+    left: 587px;
+    bottom: 40px;
+}
+
